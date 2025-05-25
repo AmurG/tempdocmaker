@@ -1,0 +1,30 @@
+# Python virtual environment
+docenv/
+
+# LlamaIndex RAG index
+rag_index/
+
+# Generated documentation artifacts
+file_notes/
+intermediate_docs/
+high-level-overview/project_overview.md
+high-level-overview/TABLE_OF_CONTENTS.md
+final_documentation/
+
+# Analysis output
+repo_structure.json
+
+# Environment variables
+.env
+
+# Python bytecode and caches
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS-specific files
+.DS_Store
+
+# Build artifacts (e.g., for tree-sitter if compiled locally)
+build/ 

@@ -1,0 +1,6 @@
+anthropic
+google-generativeai
+llama-index
+PyMuPDF
+python-dotenv
+tree-sitter-language-pack 
