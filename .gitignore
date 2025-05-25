@@ -27,4 +27,7 @@ __pycache__/
 .DS_Store
 
 # Build artifacts (e.g., for tree-sitter if compiled locally)
-build/ 
+build/
+
+# Initial plan document
+high-level-idea.md 

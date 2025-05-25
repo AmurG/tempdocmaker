@@ -123,9 +123,17 @@ def main():
     if not os.path.exists(SRC_DIR):
         print(f"Source directory '{SRC_DIR}' not found.")
         return
+    
+    # Ensure FILE_NOTES_DIR exists
     if not os.path.exists(FILE_NOTES_DIR):
-        print(f"File notes directory '{FILE_NOTES_DIR}' not found. Please create it or ensure it exists.")
-        return
+        try:
+            os.makedirs(FILE_NOTES_DIR)
+            print(f"Created directory: {FILE_NOTES_DIR}")
+        except OSError as e:
+            print(f"Error creating directory {FILE_NOTES_DIR}: {e}")
+            print("Please check permissions or create the directory manually.")
+            return # Exit if directory creation fails
+
     if not os.path.exists(RAG_INDEX_DIR):
         print(f"RAG index directory '{RAG_INDEX_DIR}' not found. Please run build_rag_index.py first.")
         return
